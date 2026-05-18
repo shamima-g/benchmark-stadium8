@@ -1,0 +1,366 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_1xvC",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FilePath",
+          "Name": "FilePath",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsBulk",
+          "Name": "IsBulk",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_3861",
+      "Properties": [
+        {
+          "Id": "DataFixed",
+          "Name": "DataFixed",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Message",
+          "Name": "Message",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_6zQ6",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsSuccess",
+          "Name": "IsSuccess",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_9fIO",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FilePath",
+          "Name": "FilePath",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsBulk",
+          "Name": "IsBulk",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_aIqW",
+      "Properties": [
+        {
+          "Id": "BackupFileName",
+          "Name": "BackupFileName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "BackupFolder",
+          "Name": "BackupFolder",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FilePath",
+          "Name": "FilePath",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingId",
+          "Name": "FileSettingId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsBulk",
+          "Name": "IsBulk",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_B8HY",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_EcvW",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FilePath",
+          "Name": "FilePath",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsBulk",
+          "Name": "IsBulk",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_GlJr",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_lG62",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_NQGN",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FilePath",
+          "Name": "FilePath",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsBulk",
+          "Name": "IsBulk",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsSuccess",
+          "Name": "IsSuccess",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Message",
+          "Name": "Message",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_uEIZ",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_x9UR",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Message",
+          "Name": "Message",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_y2I0",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_YNNj",
+      "Properties": [
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

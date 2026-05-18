@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_j6iY",
+      "Properties": [
+        {
+          "Id": "MF68",
+          "Name": "Errored",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_zsuW",
+      "Properties": [
+        {
+          "Id": "PgC2",
+          "Name": "ErrorFile",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "0nav",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Kgo0",
+          "Name": "WorkflowInstanceId",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

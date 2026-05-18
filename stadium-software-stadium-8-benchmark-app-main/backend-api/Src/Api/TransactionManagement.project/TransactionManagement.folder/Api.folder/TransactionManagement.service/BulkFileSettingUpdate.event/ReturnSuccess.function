@@ -1,0 +1,30 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:C_Kx3A.Operations.BulkFileSettingUpdate.Result?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Response200\":{\"Id\":{\"LinxExpression\":\"[PARSED]\"}, \"MessageType\":\"Success\", \"Messages\":[\"Bulk file setting successfully updated\"]}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "Id"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.BulkFileSettingId",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int32"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

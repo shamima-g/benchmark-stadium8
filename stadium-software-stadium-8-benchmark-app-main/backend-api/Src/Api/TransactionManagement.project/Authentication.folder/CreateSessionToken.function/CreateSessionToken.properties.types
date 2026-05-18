@@ -1,0 +1,22 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_rtpz",
+      "Properties": [
+        {
+          "Id": "QomE",
+          "Name": "IpAddress",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "qE1O",
+          "Name": "UserId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

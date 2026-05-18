@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_3BVw",
+      "Properties": [
+        {
+          "Id": "FileSettingId",
+          "Name": "FileSettingId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileSettingName",
+          "Name": "FileSettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "InboxFileName",
+          "Name": "InboxFileName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "InboxFolder",
+          "Name": "InboxFolder",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsBulk",
+          "Name": "IsBulk",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ProcessDefinitionName",
+          "Name": "ProcessDefinitionName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:T_9fIO?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"FileLogId\":{\"LinxExpression\":\"[PARSED]\"}, \"FilePath\":{\"LinxExpression\":\"[PARSED]\"}, \"FileSettingName\":{\"LinxExpression\":\"[PARSED]\"}, \"IsBulk\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "FileLogId"
+            ],
+            "expression": {
+              "Expression": "RegisterFile.FileLogId",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "FilePath"
+            ],
+            "expression": {
+              "Expression": "RegisterFile.FilePath",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "FileSettingName"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.DataInputs.FileSettingName",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "IsBulk"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.DataInputs.IsBulk",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

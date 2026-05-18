@@ -1,0 +1,30 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:C_Kx3A.Operations.FileProcessLogGetList.Result?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Response200\":{\"FileLog\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "FileLog"
+            ],
+            "expression": {
+              "Expression": "ReadFileProcessLogs",
+              "CompiledExpression": "={0}",
+              "Type": "List:?Generated:T_8TVD?"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

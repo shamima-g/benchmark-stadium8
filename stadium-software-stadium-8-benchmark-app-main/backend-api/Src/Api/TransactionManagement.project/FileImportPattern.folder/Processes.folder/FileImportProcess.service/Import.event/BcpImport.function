@@ -1,0 +1,59 @@
+{
+  "Properties": [
+    {
+      "Id": "Command",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "\"\\\"\" + $.Settings.BcpPath + \"\\\" \" + \r\nGetBcpDetails.DatabaseName + \".\" + \r\nGetBcpDetails.SchemaName + \".\" + \r\nGetBcpDetails.TableName + \" in \\\"\" + \r\n$.Parameters.DataInputs.FilePath + \"\\\" -e \\\"\" + \r\nGetBcpDetails.ErrorFile + \"\\\" -r \\\"\" + \r\nGetBcpDetails.RowTerminator + \"\\\" -t \\\"\" + \r\nGetBcpDetails.FieldTerminator + \"\\\" -f \\\"\" + \r\nGetBcpDetails.FormatFile + \"\\\" -F \" + \r\nGetBcpDetails.FirstRow + \" -S \\\"\" + \r\nGetBcpDetails.ServerName + \"\\\" -T \" +\r\n(GetBcpDetails.QuotedIdentifier ? \"-q\" : \"\")",
+        "CompiledExpression": "=\"\\\"\"+{11}+\"\\\" \"+{10}+\".\"+{9}+\".\"+{8}+\" in \\\"\"+{7}+\"\\\" -e \\\"\"+{6}+\"\\\" -r \\\"\"+{5}+\"\\\" -t \\\"\"+{4}+\"\\\" -f \\\"\"+{3}+\"\\\" -F \"+{2}+\" -S \\\"\"+{1}+\"\\\" -T \"+({0}?\"-q\":\"\")",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Kill on timeout",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Output encoding",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Utilities.Shared.CommandLine.Encoding, Twenty57.Linx.Plugins.Utilities.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "Password",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "RuntimeRead",
+      "Value": 60000
+    },
+    {
+      "Id": "User name",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    },
+    {
+      "Id": "Wait for return",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Working directory",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    }
+  ],
+  "Result": "Generated:AsX8?",
+  "Version": "1"
+}

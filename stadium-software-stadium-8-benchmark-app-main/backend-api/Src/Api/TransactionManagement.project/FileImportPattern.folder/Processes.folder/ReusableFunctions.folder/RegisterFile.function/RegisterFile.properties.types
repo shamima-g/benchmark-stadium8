@@ -1,0 +1,60 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_R43N",
+      "Properties": [
+        {
+          "Id": "jMS0",
+          "Name": "BackupFileName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "O73Q",
+          "Name": "BackupFolder",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Byl8",
+          "Name": "FilePath",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "MyRv",
+          "Name": "FileSettingId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "DyEj",
+          "Name": "ProcessInstanceId",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_uIYz",
+      "Properties": [
+        {
+          "Id": "j5SI",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "0wVB",
+          "Name": "FilePath",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

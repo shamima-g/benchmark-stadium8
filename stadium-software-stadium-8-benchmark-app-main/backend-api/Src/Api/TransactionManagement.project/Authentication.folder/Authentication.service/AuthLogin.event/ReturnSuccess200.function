@@ -1,0 +1,33 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:C_5oHQ.Operations.AuthLogin.Result?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":200, \"Headers\":[{\"Name\":\"Set-Cookie\", \"Value\":[{\"LinxExpression\":\"[PARSED]\"}]}]}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "HttpContext",
+              "Headers",
+              "[]",
+              "Value",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "Cookie",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

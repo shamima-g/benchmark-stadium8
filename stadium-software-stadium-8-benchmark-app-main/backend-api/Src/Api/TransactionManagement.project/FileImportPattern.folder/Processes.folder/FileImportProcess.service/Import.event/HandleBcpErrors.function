@@ -1,0 +1,63 @@
+{
+  "Properties": [
+    {
+      "Id": "0nav",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FileLogId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Kgo0",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.ProcessInstance.ID",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "0nav": "FileLogId",
+        "Kgo0": "WorkflowInstanceId",
+        "PgC2": "ErrorFile"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "PgC2",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetBcpDetails.ErrorFile",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "Ymqi",
+        "Name": "FileImportPattern.Processes.ReusableFunctions.HandleBcpErrors",
+        "Parameters": "Generated:T_zsuW?",
+        "Result": "Generated:T_j6iY?",
+        "IsValid": true,
+        "QualifiedPath": "FL:FileImportPattern→FL:Processes→FL:ReusableFunctions→PC:HandleBcpErrors"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    }
+  ],
+  "Result": "Generated:T_j6iY?"
+}

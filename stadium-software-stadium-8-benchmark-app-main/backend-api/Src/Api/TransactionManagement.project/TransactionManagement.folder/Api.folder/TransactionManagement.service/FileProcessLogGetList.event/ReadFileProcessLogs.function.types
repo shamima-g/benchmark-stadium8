@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_8TVD",
+      "Properties": [
+        {
+          "Id": "ActivityName",
+          "Name": "ActivityName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "DecisionResult",
+          "Name": "DecisionResult",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "EndDate",
+          "Name": "EndDate",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileName",
+          "Name": "FileName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastExecutedActivityName",
+          "Name": "LastExecutedActivityName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "StartDate",
+          "Name": "StartDate",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

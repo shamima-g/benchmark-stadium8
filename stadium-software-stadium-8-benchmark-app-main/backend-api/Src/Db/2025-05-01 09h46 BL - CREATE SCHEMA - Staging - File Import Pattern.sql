@@ -1,0 +1,13 @@
+IF NOT EXISTS	
+(
+	SELECT
+		*
+	FROM
+		INFORMATION_SCHEMA.SCHEMATA
+	WHERE
+		schema_name = 'Staging'
+)
+BEGIN
+	EXEC sp_executesql N'CREATE SCHEMA Staging'
+END
+GO

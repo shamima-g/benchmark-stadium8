@@ -1,0 +1,101 @@
+{
+  "Properties": [
+    {
+      "Id": "Encoding",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.Encoding, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "Fields",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.TextFileRead.TextFileReaderFields, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "SkipHeaderLines": 1,
+        "SkipFooterLines": 0,
+        "FileFormat": "CommaDelimited",
+        "TextQualifier": "None",
+        "OtherDelimiter": "",
+        "FieldList": [
+          {
+            "Name": "Reference",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "Name": "TransactionDate",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "Name": "AccountNumber",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "Name": "Description",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "Name": "Amount",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "Name": "TransactionType",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "Name": "Currency",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String?"
+          }
+        ]
+      }
+    },
+    {
+      "Id": "File path",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.FIlePath",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.TextFileRead.FileReadOptions, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "LineByLine"
+    }
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "ForEachLine",
+      "Name": "ForEachLine",
+      "Result": "Generated:T_KrWo?",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore",
+      "ConstitutesControlFlow": true
+    }
+  ],
+  "Version": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "Id": "XScx",
+  "Name": "GetProcessInstanceLog",
+  "PluginId": "GetProcessInstanceLog",
+  "Parameters": [
+    {
+      "Id": "mLcf",
+      "Name": "ProcessInstanceID",
+      "PluginId": "ProcessInstanceID"
+    }
+  ]
+}

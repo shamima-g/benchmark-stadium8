@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:T_uIYz?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"FileLogId\":{\"LinxExpression\":\"[PARSED]\"}, \"FilePath\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "FileLogId"
+            ],
+            "expression": {
+              "Expression": "InsertIntoFileLog.FileLogId",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "FilePath"
+            ],
+            "expression": {
+              "Expression": "MoveFileToBackupFolder",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

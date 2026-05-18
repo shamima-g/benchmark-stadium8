@@ -1,0 +1,17 @@
+{
+  "Id": "phaD",
+  "Name": "StopProcessInstance",
+  "PluginId": "StopProcessInstance",
+  "Parameters": [
+    {
+      "Id": "8ukP",
+      "Name": "Reason",
+      "PluginId": "Reason"
+    },
+    {
+      "Id": "KdYl",
+      "Name": "ProcessInstanceID",
+      "PluginId": "ProcessInstanceID"
+    }
+  ]
+}

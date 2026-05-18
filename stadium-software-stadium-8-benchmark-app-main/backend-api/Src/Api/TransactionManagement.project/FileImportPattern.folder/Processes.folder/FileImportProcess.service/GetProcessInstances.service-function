@@ -1,0 +1,67 @@
+{
+  "Id": "DNfh",
+  "Name": "GetProcessInstances",
+  "PluginId": "GetProcessInstances",
+  "Parameters": [
+    {
+      "Id": "2o7C",
+      "Name": "HasFaults",
+      "PluginId": "HasFaults"
+    },
+    {
+      "Id": "pzhA",
+      "Name": "FaultMessages",
+      "PluginId": "FaultMessages"
+    },
+    {
+      "Id": "kgmh",
+      "Name": "LastExecutedAt",
+      "PluginId": "LastExecutedAt"
+    },
+    {
+      "Id": "13rh",
+      "Name": "TimeMatchToleranceSeconds",
+      "PluginId": "TimeMatchToleranceSeconds"
+    },
+    {
+      "Id": "GNhS",
+      "Name": "CancelledAt",
+      "PluginId": "CancelledAt"
+    },
+    {
+      "Id": "zQd3",
+      "Name": "PageSize",
+      "PluginId": "PageSize"
+    },
+    {
+      "Id": "qSjl",
+      "Name": "Page",
+      "PluginId": "Page"
+    },
+    {
+      "Id": "wyQX",
+      "Name": "FinishedAt",
+      "PluginId": "FinishedAt"
+    },
+    {
+      "Id": "cCjo",
+      "Name": "ProcessInstanceIDs",
+      "PluginId": "ProcessInstanceIDs"
+    },
+    {
+      "Id": "90Dp",
+      "Name": "FaultedAt",
+      "PluginId": "FaultedAt"
+    },
+    {
+      "Id": "f1Ii",
+      "Name": "Statusses",
+      "PluginId": "Statusses"
+    },
+    {
+      "Id": "wo3G",
+      "Name": "CreatedAt",
+      "PluginId": "CreatedAt"
+    }
+  ]
+}

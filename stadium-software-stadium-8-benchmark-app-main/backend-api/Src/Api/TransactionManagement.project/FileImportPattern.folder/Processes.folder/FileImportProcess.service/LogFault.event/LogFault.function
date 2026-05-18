@@ -1,0 +1,50 @@
+{
+  "Properties": [
+    {
+      "Id": "4Erw",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FileLogId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "4Erw": "FileLogId",
+        "wWMc": "Message"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "PxFF",
+        "Name": "FileImportPattern.Processes.ReusableFunctions.LogFault",
+        "Parameters": "Generated:T_i28W?",
+        "Result": null,
+        "IsValid": true,
+        "QualifiedPath": "FL:FileImportPattern→FL:Processes→FL:ReusableFunctions→PC:LogFault"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    },
+    {
+      "Id": "wWMc",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.Message",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ]
+}

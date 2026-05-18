@@ -1,0 +1,123 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FileSettingName",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "ServerName",
+            "Name": "ServerName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "DatabaseName",
+            "Name": "DatabaseName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "SchemaName",
+            "Name": "SchemaName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "TableName",
+            "Name": "TableName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "ErrorFile",
+            "Name": "ErrorFile",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "FormatFile",
+            "Name": "FormatFile",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "FirstRow",
+            "Name": "FirstRow",
+            "ColumnType": null,
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "RowTerminator",
+            "Name": "RowTerminator",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "FieldTerminator",
+            "Name": "FieldTerminator",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "QuotedIdentifier",
+            "Name": "QuotedIdentifier",
+            "ColumnType": null,
+            "TypeReference": "Compiled:Boolean"
+          }
+        ],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "FirstRow"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT\r\n\t[BulkSettingDatabase].ServerName,\r\n\t[BulkSettingDatabase].DatabaseName,\r\n\t[BulkSetting].SchemaName,\r\n\t[BulkSetting].TableName,\r\n\t[BulkSetting].[ErrorFile],\r\n\t[BulkSetting].[FormatFile],\r\n\t[BulkSetting].[FirstRow],\r\n\t[BulkSetting].[RowTerminator],\r\n\t[BulkSetting].[FieldTerminator],\r\n\t[BulkSetting].[QuotedIdentifier]\r\nFROM\r\n\t[File].[BulkSetting]\r\nINNER JOIN\r\n\t[File].[BulkSettingDatabase] ON [BulkSettingDatabase].Id = [BulkSetting].BulkSettingDatabaseId\r\nINNER JOIN\r\n\t[File].[Setting] ON [Setting].Id = [BulkSetting].SettingId\r\nWHERE\r\n\t[Setting].[Name] = @{$.Parameters.DataInputs.FileSettingName}"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Result": "Generated:T_i8DZ?",
+  "Version": "3"
+}

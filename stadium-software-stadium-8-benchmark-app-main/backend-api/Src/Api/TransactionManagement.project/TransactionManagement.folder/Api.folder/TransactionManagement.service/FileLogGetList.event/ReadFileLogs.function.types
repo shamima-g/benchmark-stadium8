@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_WQ8N",
+      "Properties": [
+        {
+          "Id": "BulkErrorFile",
+          "Name": "BulkErrorFile",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "CurrentFileName",
+          "Name": "CurrentFileName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "CurrentFolder",
+          "Name": "CurrentFolder",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "CurrentStatus",
+          "Name": "CurrentStatus",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Direction",
+          "Name": "Direction",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileHash",
+          "Name": "FileHash",
+          "Type": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib]], System.Private.CoreLib?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "HasBulkErrorFile",
+          "Name": "HasBulkErrorFile",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsActive",
+          "Name": "IsActive",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastExecutedActivityName",
+          "Name": "LastExecutedActivityName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ProcessDate",
+          "Name": "ProcessDate",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ProcessDefinitionId",
+          "Name": "ProcessDefinitionId",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ProcessInstanceId",
+          "Name": "ProcessInstanceId",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ProcessName",
+          "Name": "ProcessName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "RecordCount",
+          "Name": "RecordCount",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "SettingId",
+          "Name": "SettingId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "SettingName",
+          "Name": "SettingName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "Properties": [
+    {
+      "Id": "Encoding",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.Encoding, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "File path",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.FilePath",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.TextFileRead.FileReadOptions, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "Complete"
+    }
+  ],
+  "Result": "Compiled:String?",
+  "Version": "1"
+}

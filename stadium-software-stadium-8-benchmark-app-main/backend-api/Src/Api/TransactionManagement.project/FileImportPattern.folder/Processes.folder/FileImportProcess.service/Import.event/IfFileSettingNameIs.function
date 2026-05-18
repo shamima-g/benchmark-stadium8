@@ -1,0 +1,49 @@
+{
+  "Properties": [
+    {
+      "Id": "Conditions",
+      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Standard.Shared.IfElse.Condition, Twenty57.Linx.Plugins.Standard.Shared]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": [
+        {
+          "ExecutionPathId": "9eAK",
+          "Name": "TransactionImport"
+        }
+      ]
+    },
+    {
+      "Id": "Expression_0",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FileSettingName == \"Transaction-Import\"",
+        "CompiledExpression": "={0}==\"Transaction-Import\"",
+        "Type": "Compiled:Boolean"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Show else",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Stop when true",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    }
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "9eAK",
+      "Name": "TransactionImport",
+      "Result": null,
+      "Order": 0,
+      "IterationHint": "ZeroOrOnce",
+      "ConstitutesControlFlow": true
+    }
+  ],
+  "Version": "1"
+}

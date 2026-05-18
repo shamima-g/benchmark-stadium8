@@ -1,0 +1,52 @@
+{
+  "Properties": [
+    {
+      "Id": "DataOutputs",
+      "Type": "Generated:T_3861?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"DataFixed\":true, \"Message\":\"Error Fixed\"}",
+      "ValueType": "String?"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "DataOutputs": "DataOutputs",
+        "ProcessInstanceID": "ProcessInstanceID"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "ProcessInstanceID",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ReadFileDetails.ProcessInstanceId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Service function",
+      "Type": "Compiled:Linx.IServiceFunctionReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "ServiceId": "ZDMg",
+        "ServiceFunctionId": "rUio",
+        "ServiceFunctionName": "FileImportPattern.Processes.FileImportProcess.Complete_FixData",
+        "IsValid": true,
+        "QualifiedPath": "FL:FileImportPattern→FL:Processes→SV:FileImportProcess→SF:Complete_FixData"
+      },
+      "ValueType": "Linx.ServiceFunctionReference?"
+    },
+    {
+      "Id": "ServiceFunctionDataVersion",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 0
+    }
+  ],
+  "Version": "1"
+}

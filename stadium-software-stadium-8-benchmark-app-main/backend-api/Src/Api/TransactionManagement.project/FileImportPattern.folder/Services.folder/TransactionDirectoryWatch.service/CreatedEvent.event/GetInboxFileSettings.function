@@ -1,0 +1,97 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "FileSettingId",
+            "Name": "FileSettingId",
+            "ColumnType": null,
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "FileSettingName",
+            "Name": "FileSettingName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "InboxFolder",
+            "Name": "InboxFolder",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "InboxFileName",
+            "Name": "InboxFileName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "ProcessDefinitionName",
+            "Name": "ProcessDefinitionName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "IsBulk",
+            "Name": "IsBulk",
+            "ColumnType": null,
+            "TypeReference": "Compiled:Int64"
+          }
+        ],
+        "IsCustomType": false
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "RowByRow"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT\r\n\tVwFileSetting.FileSettingId,\r\n\tVwFileSetting.FileSettingName,\r\n\tVwFileSetting.FileFolder AS InboxFolder,\r\n\tVwFileSetting.[FileName] AS InboxFileName,\r\n\tVwFileSetting.ProcessDefinitionName,\r\n\tVwFileSetting.IsBulk\r\nFROM\r\n\t[File].VwFileSetting\r\nWHERE\r\n\tVwFileSetting.LocationTypeName = 'Inbox'\r\n"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "ForEachRow",
+      "Name": "ForEachRow",
+      "Result": "Generated:T_3BVw?",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore",
+      "ConstitutesControlFlow": true
+    }
+  ],
+  "Version": "3"
+}

@@ -1,0 +1,16 @@
+{
+  "Properties": [
+    {
+      "Id": "File path",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.TempDataFileFolder + \"\\\\TempData.json\"",
+        "CompiledExpression": "={0}+\"\\\\TempData.json\"",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "List:?Compiled:Byte"
+}

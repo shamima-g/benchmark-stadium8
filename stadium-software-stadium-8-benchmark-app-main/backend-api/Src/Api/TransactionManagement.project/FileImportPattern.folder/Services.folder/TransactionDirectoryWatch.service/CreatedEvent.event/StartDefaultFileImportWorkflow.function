@@ -1,0 +1,112 @@
+{
+  "Properties": [
+    {
+      "Id": "_ContextId",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": null
+    },
+    {
+      "Id": "InputBackupFileName",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetBackupFileLocation.ForEachRow.BackupFileName",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "InputBackupFolder",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetBackupFileLocation.ForEachRow.BackupFolder",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "InputFilePath",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ListFiles.File.FileName",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "InputFileSettingId",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetInboxFileSettings.ForEachRow.FileSettingId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "InputFileSettingName",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetInboxFileSettings.ForEachRow.FileSettingName",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "InputIsBulk",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetInboxFileSettings.ForEachRow.IsBulk",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "_ContextId": "_ContextId",
+        "InputBackupFileName": "InputBackupFileName",
+        "InputBackupFolder": "InputBackupFolder",
+        "InputFilePath": "InputFilePath",
+        "InputFileSettingId": "InputFileSettingId",
+        "InputFileSettingName": "InputFileSettingName",
+        "InputIsBulk": "InputIsBulk"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Service function",
+      "Type": "Compiled:Linx.IServiceFunctionReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "ServiceId": "ZDMg",
+        "ServiceFunctionId": "0PtG",
+        "ServiceFunctionName": "FileImportPattern.Processes.FileImportProcess.StartProcess",
+        "IsValid": true,
+        "QualifiedPath": "FL:FileImportPattern→FL:Processes→SV:FileImportProcess→SF:StartProcess"
+      },
+      "ValueType": "Linx.ServiceFunctionReference?"
+    },
+    {
+      "Id": "ServiceFunctionDataVersion",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 1
+    }
+  ],
+  "Result": "Compiled:String?",
+  "Version": "1"
+}

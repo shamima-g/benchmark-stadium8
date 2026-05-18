@@ -1,0 +1,50 @@
+{
+  "Properties": [
+    {
+      "Id": "ep1P",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FilePath",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "moRH",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FileLogId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "ep1P": "FIlePath",
+        "moRH": "FileLogId"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "AcGz",
+        "Name": "FileImportPattern.Imports.ImportTransactions",
+        "Parameters": "Generated:T_Ca3s?",
+        "Result": null,
+        "IsValid": true,
+        "QualifiedPath": "FL:FileImportPattern→FL:Imports→PC:ImportTransactions"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    }
+  ]
+}

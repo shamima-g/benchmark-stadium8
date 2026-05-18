@@ -1,0 +1,51 @@
+{
+  "Properties": [
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "qE1O": "UserId",
+        "QomE": "IpAddress"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "sH29",
+        "Name": "Authentication.CreateSessionToken",
+        "Parameters": "Generated:T_rtpz?",
+        "Result": "Compiled:String?",
+        "IsValid": true,
+        "QualifiedPath": "FL:Authentication→PC:CreateSessionToken"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    },
+    {
+      "Id": "qE1O",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetUser.Id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "QomE",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.HttpContext.Connection.RemoteIpAddress",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?"
+}

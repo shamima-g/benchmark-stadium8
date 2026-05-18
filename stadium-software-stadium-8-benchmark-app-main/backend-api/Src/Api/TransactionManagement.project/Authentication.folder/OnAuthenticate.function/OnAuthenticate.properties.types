@@ -1,0 +1,30 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_lyfF",
+      "Properties": [
+        {
+          "Id": "5Dtd",
+          "Name": "HttpContext",
+          "Type": "Custom:skGh?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_SkR9",
+      "Properties": [
+        {
+          "Id": "umfs",
+          "Name": "SessionToken",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

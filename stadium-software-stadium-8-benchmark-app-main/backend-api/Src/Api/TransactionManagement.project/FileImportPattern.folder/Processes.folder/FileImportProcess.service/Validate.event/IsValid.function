@@ -1,0 +1,18 @@
+{
+  "Properties": [
+    {
+      "Id": "Nullable",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Value",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeRead",
+      "Value": false
+    }
+  ],
+  "Result": "Compiled:Boolean",
+  "Version": "1"
+}

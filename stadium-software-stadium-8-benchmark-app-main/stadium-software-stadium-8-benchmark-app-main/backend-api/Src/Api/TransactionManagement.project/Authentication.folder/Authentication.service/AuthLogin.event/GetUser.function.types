@@ -1,0 +1,40 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_Ad2p",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "PasswordHash",
+          "Name": "PasswordHash",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

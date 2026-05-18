@@ -1,0 +1,22 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_PrFQ",
+      "Properties": [
+        {
+          "Id": "StagingSchema",
+          "Name": "StagingSchema",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "StagingTable",
+          "Name": "StagingTable",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

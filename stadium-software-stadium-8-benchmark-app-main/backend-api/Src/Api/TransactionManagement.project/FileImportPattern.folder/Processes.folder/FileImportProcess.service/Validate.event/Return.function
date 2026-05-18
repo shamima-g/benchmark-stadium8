@@ -1,0 +1,49 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:T_6zQ6?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"IsSuccess\":{\"LinxExpression\":\"[PARSED]\"}, \"FileLogId\":{\"LinxExpression\":\"[PARSED]\"}, \"FileSettingName\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "IsSuccess"
+            ],
+            "expression": {
+              "Expression": "IsValid",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          },
+          {
+            "typePath": [
+              "FileLogId"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.DataInputs.FileLogId",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "FileSettingName"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.DataInputs.FileSettingName",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

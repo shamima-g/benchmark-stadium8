@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "XBMQ": "FileLogId"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "rcEX",
+        "Name": "FileImportPattern.Validations.ValidateTransactions",
+        "Parameters": "Generated:T_dCrS?",
+        "Result": "Compiled:Boolean",
+        "IsValid": true,
+        "QualifiedPath": "FL:FileImportPattern→FL:Validations→PC:ValidateTransactions"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    },
+    {
+      "Id": "XBMQ",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FileLogId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:Boolean"
+}

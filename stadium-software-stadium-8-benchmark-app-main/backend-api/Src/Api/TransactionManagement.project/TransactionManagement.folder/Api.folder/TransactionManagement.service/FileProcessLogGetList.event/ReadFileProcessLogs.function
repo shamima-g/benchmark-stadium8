@@ -1,0 +1,99 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.LogId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int32"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "FileName",
+            "Name": "FileName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "ActivityName",
+            "Name": "ActivityName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "DecisionResult",
+            "Name": "DecisionResult",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "LastExecutedActivityName",
+            "Name": "LastExecutedActivityName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "StartDate",
+            "Name": "StartDate",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "EndDate",
+            "Name": "EndDate",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          }
+        ],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "ListOfRows"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "WITH ActivityExecution AS (\r\n\tSELECT \r\n\t\tProcessInstanceId,\r\n\t\tActivityId,\r\n\t\tActivityName,\r\n\t\tTimestamp,\r\n\t\tEventName,\r\n\t\tROW_NUMBER() OVER (\r\n\t\t\tPARTITION BY ProcessInstanceId, ActivityId, EventName\r\n\t\t\tORDER BY Timestamp\r\n\t    \t) AS RowNum\r\n\tFROM \r\n\t\t[linx_processautomation_reporting].[ProcessExecutionLogsView]\r\n\tWHERE \t\r\n\t\tEventName IN ('Executing', 'Executed')\r\n),\r\nCombinedActivityExecutions AS (\r\n\tSELECT\r\n\t\tExecuting.ProcessInstanceId,\r\n\t\tExecuting.ActivityId,\r\n\t\tExecuting.ActivityName,\r\n\t\tExecuting.Timestamp AS ActivityStartDate,\r\n        Executed.Timestamp AS ActivityEndDate,\r\n\t\tExecuting.RowNum AS AttemptNumber\r\n\tFROM \r\n\t\tActivityExecution Executing\r\n\tINNER JOIN \r\n\t\tActivityExecution Executed ON Executing.ProcessInstanceId = Executed.ProcessInstanceId\r\n\t\t\t\t\t\t\t\t\t\tAND Executing.ActivityId = Executed.ActivityId\r\n\t\t\t\t\t\t\t\t\t\tAND Executing.RowNum = Executed.RowNum\r\n\t\t\t\t\t\t\t\t\t\tAND Executing.EventName = 'Executing'\r\n\t\t\t\t\t\t\t\t\t\tAND Executed.EventName = 'Executed'\r\n)\r\nSELECT\r\n\t[Log].CurrentFileName AS [FileName],\r\n\t[ProcessExecutionLogsView].[ActivityName],\r\n\tCASE \r\n\t\tWHEN [ProcessExecutionLogsView].ActivityType = 'ExclusiveGateway' \r\n\t\tTHEN JSON_VALUE([ProcessExecutionLogsView].[Data], '$.Outcomes[0]')\r\n\t\tELSE ''\r\n\tEND AS DecisionResult,\r\n\tCombinedActivityExecutions.ActivityName AS LastExecutedActivityName,\r\n\tCONVERT(VARCHAR(23), CAST(SWITCHOFFSET(CAST(CombinedActivityExecutions.ActivityStartDate AS DATETIMEOFFSET), '+02:00') AS DATETIME), 121) AS StartDate,\r\n    CONVERT(VARCHAR(23), CAST(SWITCHOFFSET(CAST(CombinedActivityExecutions.ActivityEndDate AS DATETIMEOFFSET), '+02:00') AS DATETIME), 121) AS EndDate\r\nFROM \r\n\tCombinedActivityExecutions\r\nINNER JOIN \r\n\t[linx_processautomation_reporting].[ProcessExecutionLogsView] ON [ProcessExecutionLogsView].ProcessInstanceId = CombinedActivityExecutions.ProcessInstanceId\r\n\t\t\t\t\t\t\t\t\t\t\t\tAND [ProcessExecutionLogsView].ActivityId = CombinedActivityExecutions.ActivityId\r\n\t\t\t\t\t\t\t\t\t\t\t\tAND [ProcessExecutionLogsView].EventName = 'Executed'\r\n\t\t\t\t\t\t\t\t\t\t\t\tAND [ProcessExecutionLogsView].Timestamp = CombinedActivityExecutions.ActivityEndDate\r\nINNER JOIN \r\n\t[File].[Log] ON [Log].ProcessInstanceId = CombinedActivityExecutions.ProcessInstanceId\r\nWHERE \r\n\t[Log].Id = @{$.Parameters.LogId}\r\nORDER BY \r\n\tCombinedActivityExecutions.ActivityStartDate DESC"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Result": "List:?Generated:T_8TVD?",
+  "Version": "3"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_KrWo",
+      "Properties": [
+        {
+          "Id": "LineContents",
+          "Name": "LineContents",
+          "Type": "Generated:T_t9NK?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LineNumber",
+          "Name": "LineNumber",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_t9NK",
+      "Properties": [
+        {
+          "Id": "AccountNumber",
+          "Name": "AccountNumber",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Amount",
+          "Name": "Amount",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Currency",
+          "Name": "Currency",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Description",
+          "Name": "Description",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Reference",
+          "Name": "Reference",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TransactionDate",
+          "Name": "TransactionDate",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TransactionType",
+          "Name": "TransactionType",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

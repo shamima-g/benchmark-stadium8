@@ -1,0 +1,79 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:T_NQGN?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"IsSuccess\":{\"LinxExpression\":\"[PARSED]\"}, \"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"FileLogId\":{\"LinxExpression\":\"[PARSED]\"}, \"FilePath\":{\"LinxExpression\":\"[PARSED]\"}, \"FileSettingName\":{\"LinxExpression\":\"[PARSED]\"}, \"IsBulk\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "IsSuccess"
+            ],
+            "expression": {
+              "Expression": "ValidateFileDuplicate.IsSuccess",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          },
+          {
+            "typePath": [
+              "Message"
+            ],
+            "expression": {
+              "Expression": "ValidateFileDuplicate.Message",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "FileLogId"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.DataInputs.FileLogId",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "FilePath"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.DataInputs.FilePath",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "FileSettingName"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.DataInputs.FileSettingName",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          },
+          {
+            "typePath": [
+              "IsBulk"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.DataInputs.IsBulk",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

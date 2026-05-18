@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Contents",
+      "Type": "Compiled:System.Collections.Generic.IEnumerable`1[[System.Byte, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.body",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib]], System.Private.CoreLib?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "File Does Not Exist",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.DoesNotExistOption, Twenty57.Linx.Plugins.File.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "CreateFile"
+    },
+    {
+      "Id": "File Exists",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.ExistOption, Twenty57.Linx.Plugins.File.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "OverwriteFile"
+    },
+    {
+      "Id": "File path",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.IBinaryFileHandle, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetInboxFileLocation.InboxFolder + \"\\\\\" + $.Parameters.FileName",
+        "CompiledExpression": "={1}+\"\\\\\"+{0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?"
+}

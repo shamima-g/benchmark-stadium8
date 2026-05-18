@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_Dq93",
+      "Properties": [
+        {
+          "Id": "NumberOfFiles",
+          "Name": "NumberOfFiles",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_OP8N",
+      "Properties": [
+        {
+          "Id": "CreationTime",
+          "Name": "CreationTime",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileName",
+          "Name": "FileName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Hidden",
+          "Name": "Hidden",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastAccessTime",
+          "Name": "LastAccessTime",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastWriteTime",
+          "Name": "LastWriteTime",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ReadOnly",
+          "Name": "ReadOnly",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Size",
+          "Name": "Size",
+          "Type": "Compiled:Double",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

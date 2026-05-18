@@ -1,0 +1,31 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:C_Kx3A.Operations.FilesUpload.Result?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Response200\":{\"Messages\":[{\"LinxExpression\":\"[PARSED]\"}]}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "Messages",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.FileName + \" has been uploaded successfully.\"",
+              "CompiledExpression": "={0}+\" has been uploaded successfully.\"",
+              "Type": "Compiled:String?"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

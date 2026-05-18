@@ -1,0 +1,46 @@
+{
+  "Properties": [
+    {
+      "Id": "Contents",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetFileLogData.Data",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Destination encoding",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.Encoding, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "File does not exist",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.DoesNotExistOption, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "CreateFile"
+    },
+    {
+      "Id": "File exists",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.ExistOption, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "OverwriteFile"
+    },
+    {
+      "Id": "File path",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileReadWrite.ITextFileHandle, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.TempDataFileFolder + \"\\\\TempData.json\"",
+        "CompiledExpression": "={0}+\"\\\\TempData.json\"",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?",
+  "Version": "1"
+}

@@ -1,0 +1,15 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:T_j6iY?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"Errored\":false}",
+      "ValueType": "String?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

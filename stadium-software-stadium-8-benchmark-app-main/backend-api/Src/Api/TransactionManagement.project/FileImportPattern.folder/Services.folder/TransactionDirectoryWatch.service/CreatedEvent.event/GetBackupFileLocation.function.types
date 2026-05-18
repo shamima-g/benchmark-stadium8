@@ -1,0 +1,40 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_UVse",
+      "Properties": [
+        {
+          "Id": "BackupFileName",
+          "Name": "BackupFileName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "BackupFolder",
+          "Name": "BackupFolder",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileLocationId",
+          "Name": "FileLocationId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LocationTypeId",
+          "Name": "LocationTypeId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LocationTypeName",
+          "Name": "LocationTypeName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

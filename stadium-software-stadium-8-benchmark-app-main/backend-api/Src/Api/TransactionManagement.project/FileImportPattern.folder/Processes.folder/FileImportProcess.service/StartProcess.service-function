@@ -1,0 +1,42 @@
+{
+  "Id": "0PtG",
+  "Name": "StartProcess",
+  "PluginId": "StartProcess",
+  "Parameters": [
+    {
+      "Id": "Tq55",
+      "Name": "InputIsBulk",
+      "PluginId": "InputIsBulk"
+    },
+    {
+      "Id": "sum5",
+      "Name": "InputBackupFolder",
+      "PluginId": "InputBackupFolder"
+    },
+    {
+      "Id": "HOd3",
+      "Name": "_ContextId",
+      "PluginId": "_ContextId"
+    },
+    {
+      "Id": "6BoT",
+      "Name": "InputFilePath",
+      "PluginId": "InputFilePath"
+    },
+    {
+      "Id": "XUag",
+      "Name": "InputFileSettingName",
+      "PluginId": "InputFileSettingName"
+    },
+    {
+      "Id": "8dIw",
+      "Name": "InputBackupFileName",
+      "PluginId": "InputBackupFileName"
+    },
+    {
+      "Id": "ONvP",
+      "Name": "InputFileSettingId",
+      "PluginId": "InputFileSettingId"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "Id",
+            "Name": "Id",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "FileLogId",
+            "Name": "FileLogId",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "FileName",
+            "Name": "FileName",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "Reference",
+            "Name": "Reference",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "TransactionDate",
+            "Name": "TransactionDate",
+            "ColumnType": "DateTime",
+            "TypeReference": "Compiled:DateTime"
+          },
+          {
+            "ColumnName": "AccountNumber",
+            "Name": "AccountNumber",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "Description",
+            "Name": "Description",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "Amount",
+            "Name": "Amount",
+            "ColumnType": "Decimal",
+            "TypeReference": "Compiled:Decimal"
+          },
+          {
+            "ColumnName": "TransactionType",
+            "Name": "TransactionType",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "Currency",
+            "Name": "Currency",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "Status",
+            "Name": "Status",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "UserNote",
+            "Name": "UserNote",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "LastChangedUser",
+            "Name": "LastChangedUser",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "LastChangedDate",
+            "Name": "LastChangedDate",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          }
+        ],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared",
+      "ValueUsage": "DesignTime",
+      "Value": "ListOfRows"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT\r\n    [Transaction].Id,\r\n    [Transaction].FileLogId,\r\n    FileName = Log.CurrentFileName,\r\n    [Transaction].Reference,\r\n    [Transaction].TransactionDate,\r\n    [Transaction].AccountNumber,\r\n    [Transaction].Description,\r\n    [Transaction].Amount,\r\n    [Transaction].TransactionType,\r\n    [Transaction].Currency,\r\n    [Transaction].Status,\r\n    [Transaction].UserNote,\r\n    [Transaction].LastChangedUser,\r\n    FORMAT([Transaction].LastChangedDate, 'yyyy-MM-dd HH:mm:ss') AS LastChangedDate\r\nFROM\r\n    dbo.[Transaction]\r\nLEFT JOIN\r\n    [File].[Log] ON [Transaction].FileLogId = Log.Id\r\nORDER BY\r\n    [Transaction].TransactionDate DESC"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Result": "List:?Generated:T_aS25?",
+  "Version": "3"
+}

@@ -1,0 +1,92 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetStagingSchemaAndTable.StagingSchema",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetStagingSchemaAndTable.StagingTable",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "Name",
+            "Name": "Name",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "HeaderText",
+            "Name": "HeaderText",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "Visible",
+            "Name": "Visible",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          }
+        ],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "ListOfRows"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT \r\n\tCOLUMN_NAME AS Name,\r\n\tCOLUMN_NAME AS HeaderText,\r\n\t1 AS Visible\r\nFROM \r\n\tINFORMATION_SCHEMA.COLUMNS\r\nWHERE \r\n\tTABLE_SCHEMA = @{GetStagingSchemaAndTable.StagingSchema}\r\nAND \r\n\tTABLE_NAME = @{GetStagingSchemaAndTable.StagingTable}\r\nORDER BY \r\n\tORDINAL_POSITION\r\n"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Result": "List:?Generated:T_Z9XU?",
+  "Version": "3"
+}

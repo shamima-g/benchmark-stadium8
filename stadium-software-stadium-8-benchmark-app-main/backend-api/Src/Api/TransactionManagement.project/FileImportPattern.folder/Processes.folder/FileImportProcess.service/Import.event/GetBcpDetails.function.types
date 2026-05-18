@@ -1,0 +1,70 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_i8DZ",
+      "Properties": [
+        {
+          "Id": "DatabaseName",
+          "Name": "DatabaseName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ErrorFile",
+          "Name": "ErrorFile",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FieldTerminator",
+          "Name": "FieldTerminator",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstRow",
+          "Name": "FirstRow",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FormatFile",
+          "Name": "FormatFile",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "QuotedIdentifier",
+          "Name": "QuotedIdentifier",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "RowTerminator",
+          "Name": "RowTerminator",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "SchemaName",
+          "Name": "SchemaName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ServerName",
+          "Name": "ServerName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TableName",
+          "Name": "TableName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "Id": "9UMs",
+  "Name": "GetProcessInstance",
+  "PluginId": "GetProcessInstance",
+  "Parameters": [
+    {
+      "Id": "cDx8",
+      "Name": "ProcessInstanceID",
+      "PluginId": "ProcessInstanceID"
+    }
+  ]
+}

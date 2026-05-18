@@ -1,0 +1,17 @@
+{
+  "Id": "aTAp",
+  "Name": "CancelProcessInstance",
+  "PluginId": "CancelProcessInstance",
+  "Parameters": [
+    {
+      "Id": "uJIV",
+      "Name": "Reason",
+      "PluginId": "Reason"
+    },
+    {
+      "Id": "xEhA",
+      "Name": "ProcessInstanceID",
+      "PluginId": "ProcessInstanceID"
+    }
+  ]
+}

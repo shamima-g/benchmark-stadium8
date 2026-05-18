@@ -1,0 +1,17 @@
+{
+  "Id": "rUio",
+  "Name": "Complete_FixData",
+  "PluginId": "Complete__8C31689A-9BB2-4740-98BC-F32C1DCA32F6",
+  "Parameters": [
+    {
+      "Id": "9We2",
+      "Name": "DataOutputs",
+      "PluginId": "DataOutputs"
+    },
+    {
+      "Id": "SEnb",
+      "Name": "ProcessInstanceID",
+      "PluginId": "ProcessInstanceID"
+    }
+  ]
+}

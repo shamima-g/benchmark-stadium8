@@ -1,0 +1,16 @@
+{
+  "Id": "hpdf",
+  "Name": "Role",
+  "Properties": [
+    {
+      "Id": "X6cg",
+      "Name": "Id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "EHzA",
+      "Name": "Name",
+      "Type": "Compiled:String?"
+    }
+  ]
+}

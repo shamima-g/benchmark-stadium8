@@ -1,0 +1,148 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "Id",
+            "Name": "Id",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "Name",
+            "Name": "Name",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "SourceId",
+            "Name": "SourceId",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "SourceName",
+            "Name": "SourceName",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "TypeId",
+            "Name": "TypeId",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "TypeName",
+            "Name": "TypeName",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "Direction",
+            "Name": "Direction",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "StagingSchema",
+            "Name": "StagingSchema",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "StagingTable",
+            "Name": "StagingTable",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "TargetSchema",
+            "Name": "TargetSchema",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "TargetTable",
+            "Name": "TargetTable",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "ProcessDefinitionId",
+            "Name": "ProcessDefinitionId",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "ProcessDefinitionName",
+            "Name": "ProcessDefinitionName",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "IsActive",
+            "Name": "IsActive",
+            "ColumnType": "Boolean",
+            "TypeReference": "Compiled:Boolean"
+          },
+          {
+            "ColumnName": "LastChangedUser",
+            "Name": "LastChangedUser",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "LastChangedDate",
+            "Name": "LastChangedDate",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          }
+        ],
+        "IsCustomType": false
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "ListOfRows"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT DISTINCT\r\n\tFileSettingId AS Id,\r\n\tFileSettingName AS [Name],\r\n\tFileSourceId AS SourceId,\r\n\tFileSourceName AS SourceName,\r\n\tFileTypeId AS TypeId,\r\n\tFileTypeName AS TypeName,\r\n\tDirection,\r\n\tStagingSchema, \r\n\tStagingTable,\r\n\tTargetSchema,\r\n\tTargetTable,\r\n\tProcessDefinitionId,\r\n\tProcessDefinitionName,\r\n\tIsActive,\r\n\tLastChangedUser,\r\n\tLastChangedDate\r\nFROM\r\n\t[File].[VwFileSetting]\r\n"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Result": "List:?Generated:T_1jY1?",
+  "Version": "3"
+}

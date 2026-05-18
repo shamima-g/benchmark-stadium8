@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "umfs": "SessionToken"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib?"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "q34n",
+        "Name": "Authentication.OnAuthenticate",
+        "Parameters": "Generated:T_SkR9?",
+        "Result": "Generated:T_lyfF?",
+        "IsValid": true,
+        "QualifiedPath": "FL:Authentication→PC:OnAuthenticate"
+      },
+      "ValueType": "Linx.ProcessReference?"
+    },
+    {
+      "Id": "umfs",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.AuthenticationData.ApiKey.ProvidedToken",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Generated:T_lyfF?"
+}

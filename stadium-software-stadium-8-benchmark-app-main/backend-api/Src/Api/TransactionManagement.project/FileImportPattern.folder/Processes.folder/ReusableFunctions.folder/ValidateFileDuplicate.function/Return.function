@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:T_EWzN?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"IsSuccess\":{\"LinxExpression\":\"[PARSED]\"}, \"Message\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "IsSuccess"
+            ],
+            "expression": {
+              "Expression": "ValidateFileDuplicate.IsSuccess",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          },
+          {
+            "typePath": [
+              "Message"
+            ],
+            "expression": {
+              "Expression": "ValidateFileDuplicate.Message",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String?"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

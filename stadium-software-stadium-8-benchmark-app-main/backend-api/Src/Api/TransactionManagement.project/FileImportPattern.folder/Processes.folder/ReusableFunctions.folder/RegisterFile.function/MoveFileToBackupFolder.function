@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Dest. file path",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.BackupFolder + \"\\\\\" + $.Parameters.BackupFileName",
+        "CompiledExpression": "={1}+\"\\\\\"+{0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "File exists",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Shared.Common.FileTransfer.ExistsOption, Twenty57.Linx.Plugins.File.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "IncrementFileName"
+    },
+    {
+      "Id": "Keep file name",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Source file path",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.FilePath",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "Compiled:String?"
+}

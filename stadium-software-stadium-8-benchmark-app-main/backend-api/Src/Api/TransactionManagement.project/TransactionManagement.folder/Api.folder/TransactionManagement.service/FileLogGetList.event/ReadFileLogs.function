@@ -1,0 +1,187 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.IsActive",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.IsActive",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression2",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.IsActive",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "Id",
+            "Name": "Id",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "ProcessDate",
+            "Name": "ProcessDate",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "SettingId",
+            "Name": "SettingId",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "SettingName",
+            "Name": "SettingName",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "ProcessInstanceId",
+            "Name": "ProcessInstanceId",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "CurrentFolder",
+            "Name": "CurrentFolder",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "CurrentFileName",
+            "Name": "CurrentFileName",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "FileHash",
+            "Name": "FileHash",
+            "ColumnType": "Binary",
+            "TypeReference": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib]], System.Private.CoreLib?"
+          },
+          {
+            "ColumnName": "RecordCount",
+            "Name": "RecordCount",
+            "ColumnType": "Int32",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "Direction",
+            "Name": "Direction",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "CurrentStatus",
+            "Name": "CurrentStatus",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "LastExecutedActivityName",
+            "Name": "LastExecutedActivityName",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "ProcessDefinitionId",
+            "Name": "ProcessDefinitionId",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "ProcessName",
+            "Name": "ProcessName",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "IsActive",
+            "Name": "IsActive",
+            "ColumnType": "Boolean",
+            "TypeReference": "Compiled:Boolean"
+          },
+          {
+            "ColumnName": "BulkErrorFile",
+            "Name": "BulkErrorFile",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "HasBulkErrorFile",
+            "Name": "HasBulkErrorFile",
+            "ColumnType": "String",
+            "TypeReference": "Compiled:String?"
+          }
+        ],
+        "IsCustomType": false
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "ListOfRows"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT\r\n\t[VwFileLog].LogId AS Id,\r\n\tFORMAT([VwFileLog].[LastExecutedAt],'yyyy-MM-dd HH:mm:ss') AS [ProcessDate],\r\n\t[VwFileLog].SettingId,\r\n\t[VwFileLog].SettingName,\r\n\t[VwFileLog].ProcessInstanceId,\r\n\t[VwFileLog].CurrentFolder,\r\n\t[VwFileLog].CurrentFileName,\r\n\t[VwFileLog].FileHash,\r\n\t[VwFileLog].RecordCount,\r\n\t[VwFileLog].Direction,\r\n\t[VwFileLog].CurrentStatus,\r\n\t[VwFileLog].LastExecutedActivityName,\r\n\t[VwFileLog].ProcessDefinitionId,\r\n\t[VwFileLog].ProcessName,\r\n\t[VwFileLog].IsActive,\r\n\t[VwFileLog].BulkErrorFile,\r\n\t[VwFileLog].HasBulkErrorFile\r\nFROM\r\n\t[File].[VwFileLog]\r\nWHERE\r\n\tIsActive = CASE \r\n\t\t\t\t\tWHEN @{$.Parameters.IsActive} = 'Yes' THEN 1\r\n\t\t\t\t\tWHEN @{$.Parameters.IsActive} = 'No' THEN 0\r\n\t\t\t\t\tWHEN @{$.Parameters.IsActive} = 'All' THEN IsActive\r\n\t\t\t\tELSE\r\n\t\t\t\t\tIsActive\r\n\t\t\t\tEND\r\nORDER BY\r\n\t[VwFileLog].LastExecutedAt DESC\r\n\t"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Result": "List:?Generated:T_WQ8N?",
+  "Version": "3"
+}

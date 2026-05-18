@@ -1,0 +1,66 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FileLogId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.DataInputs.FileLogId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "INSERT INTO [dbo].[Transaction](\r\n    [FileLogId]\r\n   ,[Reference]\r\n   ,[TransactionDate]\r\n   ,[AccountNumber]\r\n   ,[Description]\r\n   ,[Amount]\r\n   ,[TransactionType]\r\n   ,[Currency]\r\n   ,[LastChangedUser]\r\n)\r\nSELECT\r\n    @{$.Parameters.DataInputs.FileLogId},\r\n    StagingTransaction.[Reference],\r\n    CAST(StagingTransaction.[TransactionDate] AS DATETIME2(7)),\r\n    StagingTransaction.[AccountNumber],\r\n    StagingTransaction.[Description],\r\n    CAST(StagingTransaction.[Amount] AS DECIMAL(18, 2)),\r\n    StagingTransaction.[TransformedTransactionType],\r\n    StagingTransaction.[Currency],\r\n    'System'\r\nFROM\r\n    Staging.[Transaction] StagingTransaction\r\nLEFT JOIN\r\n    [Transaction] ON UPPER([Transaction].[Reference]) = UPPER(StagingTransaction.[Reference])\r\nWHERE\r\n    [Transaction].Id IS NULL\r\nAND\r\n    StagingTransaction.FileLogId = @{$.Parameters.DataInputs.FileLogId}"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Version": "3"
+}

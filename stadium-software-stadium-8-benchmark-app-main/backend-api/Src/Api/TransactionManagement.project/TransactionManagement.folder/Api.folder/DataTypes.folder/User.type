@@ -1,0 +1,51 @@
+{
+  "Id": "5nVt",
+  "Name": "User",
+  "Properties": [
+    {
+      "Id": "YgCW",
+      "Name": "Id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "ayUK",
+      "Name": "StadiumUserId",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "mvaJ",
+      "Name": "Email",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "G70k",
+      "Name": "FirstName",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "WB62",
+      "Name": "LastName",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "x6nT",
+      "Name": "Roles",
+      "Type": "List:?Custom:hpdf?"
+    },
+    {
+      "Id": "GRFP",
+      "Name": "LastChangedUser",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "rBDa",
+      "Name": "LastChangedDate",
+      "Type": "Compiled:String?"
+    },
+    {
+      "Id": "OrCW",
+      "Name": "RolesString",
+      "Type": "Compiled:String?"
+    }
+  ]
+}

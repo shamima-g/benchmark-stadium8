@@ -1,0 +1,30 @@
+{
+  "Properties": [
+    {
+      "Id": "Nullable",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference?",
+      "ValueUsage": "DesignTime",
+      "Value": "Compiled:String?",
+      "ValueType": "Twenty57.Linx.SolutionDependencies.Types.CompiledTypeReference, Twenty57.Linx.SolutionDependencies.Types?"
+    },
+    {
+      "Id": "Value",
+      "Type": "List:?Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ReadFile.Split(\"\\n\")",
+        "CompiledExpression": "={0}.Split(System.Linq.Enumerable.Repeat(\"\\n\", 1).ToArray(), System.StringSplitOptions.None)",
+        "Type": "Compiled:String[]"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ],
+  "Result": "List:?Compiled:String?",
+  "Version": "1"
+}

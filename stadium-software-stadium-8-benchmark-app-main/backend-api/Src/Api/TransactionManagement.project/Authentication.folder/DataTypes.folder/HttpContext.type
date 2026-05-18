@@ -1,0 +1,16 @@
+{
+  "Id": "skGh",
+  "Name": "HttpContext",
+  "Properties": [
+    {
+      "Id": "kErk",
+      "Name": "StatusCode",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "hL6q",
+      "Name": "User",
+      "Type": "Custom:9SgS?"
+    }
+  ]
+}

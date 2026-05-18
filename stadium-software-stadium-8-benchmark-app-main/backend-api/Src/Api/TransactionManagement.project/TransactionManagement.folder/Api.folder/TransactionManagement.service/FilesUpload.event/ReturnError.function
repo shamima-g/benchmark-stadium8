@@ -1,0 +1,15 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:C_Kx3A.Operations.FilesUpload.Result?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"Response500\":{\"Messages\":[\"Invalid file name\"], \"MessageType\":\"Error\"}}",
+      "ValueType": "String?"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

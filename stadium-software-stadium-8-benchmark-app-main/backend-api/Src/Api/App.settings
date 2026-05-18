@@ -1,0 +1,80 @@
+[
+  {
+    "Id": "pCPu",
+    "Name": "DatabaseConnection",
+    "Type": "Compiled:String?",
+    "Value": "Data Source={DatabaseServer};Initial Catalog={DatabaseName};TrustServerCertificate=True;Integrated Security=True;"
+  },
+  {
+    "Id": "NLtM",
+    "Name": "TransactionApiUri",
+    "Type": "Compiled:String?",
+    "Value": "http://localhost:10005/transactions-api"
+  },
+  {
+    "Id": "NjSL",
+    "Name": "TempDataFileFolder",
+    "Type": "Compiled:String?",
+    "Value": "C:\\Temp"
+  },
+  {
+    "Id": "fczZ",
+    "Name": "DatabaseServer",
+    "Type": "Compiled:String?",
+    "Value": "SQL2022"
+  },
+  {
+    "Id": "fEgI",
+    "Name": "DatabaseName",
+    "Type": "Compiled:String?",
+    "Value": "Stadium8Training"
+  },
+  {
+    "Id": "BfG5",
+    "Name": "InputFileBackupFolder",
+    "Type": "Compiled:String?",
+    "Value": "C:\\DigiataFileProcessing\\Test\\Input\\Backup"
+  },
+  {
+    "Id": "KDwL",
+    "Name": "InputFileFolder",
+    "Type": "Compiled:String?",
+    "Value": "C:\\DigiataFileProcessing\\Test\\Input"
+  },
+  {
+    "Id": "grc3",
+    "Name": "BcpPath",
+    "Type": "Compiled:String?",
+    "Value": "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\bcp.exe"
+  },
+  {
+    "Id": "7cWf",
+    "Name": "UserPasswordEncryptPassphrase",
+    "Type": "Compiled:String?",
+    "Value": "Test123"
+  },
+  {
+    "Id": "y36c",
+    "Name": "AuthenticationApiUri",
+    "Type": "Compiled:String?",
+    "Value": "http://localhost:10010"
+  },
+  {
+    "Id": "iAU8",
+    "Name": "JwtSecret",
+    "Type": "Compiled:String?",
+    "Value": "A1B2C3D4E5F6G7H8I9J0K1L2M3N4O5P6Q7R8S9T0"
+  },
+  {
+    "Id": "FbTf",
+    "Name": "SessionExpiryMinutes",
+    "Type": "Compiled:Int64",
+    "Value": "60"
+  },
+  {
+    "Id": "FLWL",
+    "Name": "CORSOrigins",
+    "Type": "Compiled:String?",
+    "Value": "[\"http://localhost:3000\", \"http://localhost:10005\",\"http://localhost:10010\"]"
+  }
+]

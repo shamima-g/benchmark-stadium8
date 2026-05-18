@@ -1,0 +1,102 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetInboxFileSettings.ForEachRow.FileSettingId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "FileLocationId",
+            "Name": "FileLocationId",
+            "ColumnType": null,
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "LocationTypeId",
+            "Name": "LocationTypeId",
+            "ColumnType": null,
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "LocationTypeName",
+            "Name": "LocationTypeName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "BackupFolder",
+            "Name": "BackupFolder",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          },
+          {
+            "ColumnName": "BackupFileName",
+            "Name": "BackupFileName",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          }
+        ],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "RowByRow"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT\r\n\tVwFileSetting.FileLocationId,\r\n\tVwFileSetting.LocationTypeId,\r\n\tVwFileSetting.LocationTypeName,\r\n\tVwFileSetting.FileFolder AS BackupFolder,\r\n\tREPLACE(VwFileSetting.[FileName], '[YYYYMMDD]', CONVERT(VARCHAR(8),getdate(), 112)) AS BackupFileName\r\nFROM\r\n\t[File].VwFileSetting\r\nWHERE\r\n\tVwFileSetting.FileSettingId = @{GetFileSettings.ForEachRow.FileSettingId}\r\nAND\r\n\tVwFileSetting.LocationTypeName = 'Backup'"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "ForEachRow",
+      "Name": "ForEachRow",
+      "Result": "Generated:T_UVse?",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore",
+      "ConstitutesControlFlow": true
+    }
+  ],
+  "Version": "3"
+}

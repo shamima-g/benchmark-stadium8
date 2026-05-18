@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_aS25",
+      "Properties": [
+        {
+          "Id": "AccountNumber",
+          "Name": "AccountNumber",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Amount",
+          "Name": "Amount",
+          "Type": "Compiled:Decimal",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Currency",
+          "Name": "Currency",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Description",
+          "Name": "Description",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileLogId",
+          "Name": "FileLogId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FileName",
+          "Name": "FileName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastChangedDate",
+          "Name": "LastChangedDate",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastChangedUser",
+          "Name": "LastChangedUser",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Reference",
+          "Name": "Reference",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Status",
+          "Name": "Status",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TransactionDate",
+          "Name": "TransactionDate",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TransactionType",
+          "Name": "TransactionType",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserNote",
+          "Name": "UserNote",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

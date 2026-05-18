@@ -1,0 +1,15 @@
+{
+  "Properties": [
+    {
+      "Id": "Source file path",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ReadFileDetails.CurrentFolder + \"//\" + ReadFileDetails.CurrentFileName",
+        "CompiledExpression": "={1}+\"//\"+{0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    }
+  ]
+}

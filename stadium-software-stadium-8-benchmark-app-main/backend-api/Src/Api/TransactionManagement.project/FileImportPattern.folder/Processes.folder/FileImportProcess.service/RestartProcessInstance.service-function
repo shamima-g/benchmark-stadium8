@@ -1,0 +1,12 @@
+{
+  "Id": "Ijsa",
+  "Name": "RestartProcessInstance",
+  "PluginId": "RestartProcessInstance",
+  "Parameters": [
+    {
+      "Id": "8ade",
+      "Name": "ProcessInstanceID",
+      "PluginId": "ProcessInstanceID"
+    }
+  ]
+}

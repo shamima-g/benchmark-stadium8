@@ -1,0 +1,75 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DatabaseConnection",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String?"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.Common.Sql.DesignerConnectionType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object?",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.FileLogId",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression?"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "IsSuccess",
+            "Name": "IsSuccess",
+            "ColumnType": null,
+            "TypeReference": "Compiled:Boolean"
+          },
+          {
+            "ColumnName": "Message",
+            "Name": "Message",
+            "ColumnType": null,
+            "TypeReference": "Compiled:String?"
+          }
+        ],
+        "IsCustomType": false
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Shared.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database.Shared?",
+      "ValueUsage": "DesignTime",
+      "Value": "FirstRow"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String?",
+      "ValueUsage": "RuntimeRead",
+      "Value": "DECLARE \r\n\t\t@FileLogId int,\r\n\t\t@FileHash binary(16),\r\n\t\t@DuplicateFileLogId int,\r\n\t\t@DuplicateFileName varchar(200)\r\n\r\nset @FileLogId = @{$.Parameters.FileLogId}\r\n\r\n/* 1. Get FileHash for the file that we want to validate */\r\nSELECT\r\n\t@FileHash = FileHash\r\nFROM\r\n\t[File].[Log]\r\nWHERE\r\n\tId = @FileLogId \r\n\r\n\r\n/* 2. Find the first file with the same file hash than the file we want to validate */\r\nSELECT\r\n\tTOP 1\r\n\t@DuplicateFileLogId\t= VwFileLog.LogId,\r\n\t@DuplicateFileName\t= VwFileLog.[CurrentFileName]\r\nFROM\r\n\t[File].VwFileLog\r\nWHERE\r\n\tVwFileLog.LogId != @FileLogId\r\nAND\r\n\tVwFileLog.FileHash = @FileHash\r\nAND\r\n\tVwFileLog.[CurrentStatus] IN ('Running', 'Finished', 'Suspended')\r\nAND\r\n\t(VwFileLog.RecordCount > 1 OR VwFileLog.RecordCount IS NULL) --Exclude empty files from duplicate check\r\nAND \r\n\tIsActive = 1 -- Exclude inactive files\r\n\r\n/* 3. Return the validation result */\r\nIF @DuplicateFileLogId IS NOT NULL\r\nBEGIN\r\n\tSELECT\r\n\t\tIsSuccess \t= 0,\r\n\t\t[Message] \t= ('File is a duplicate of another file [FileLogId = ' + cast(@DuplicateFileLogId as varchar(10)) + '; FileName = ' + @DuplicateFileName + ']')\r\nEND\r\nELSE\r\nBEGIN\r\n\tSELECT\r\n\t\tIsSuccess \t= 1, \r\n\t\t[Message] \t= ''\r\nEND\r\n\r\n"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Result": "Generated:T_6Zuz?",
+  "Version": "3"
+}

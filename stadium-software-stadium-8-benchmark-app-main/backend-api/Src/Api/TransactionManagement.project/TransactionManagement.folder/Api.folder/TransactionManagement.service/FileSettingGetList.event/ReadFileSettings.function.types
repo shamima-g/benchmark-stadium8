@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "T_1jY1",
+      "Properties": [
+        {
+          "Id": "Direction",
+          "Name": "Direction",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Id",
+          "Name": "Id",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "IsActive",
+          "Name": "IsActive",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastChangedDate",
+          "Name": "LastChangedDate",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastChangedUser",
+          "Name": "LastChangedUser",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Name",
+          "Name": "Name",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ProcessDefinitionId",
+          "Name": "ProcessDefinitionId",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ProcessDefinitionName",
+          "Name": "ProcessDefinitionName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "SourceId",
+          "Name": "SourceId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "SourceName",
+          "Name": "SourceName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "StagingSchema",
+          "Name": "StagingSchema",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "StagingTable",
+          "Name": "StagingTable",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TargetSchema",
+          "Name": "TargetSchema",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TargetTable",
+          "Name": "TargetTable",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TypeId",
+          "Name": "TypeId",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "TypeName",
+          "Name": "TypeName",
+          "Type": "Compiled:String?",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]
